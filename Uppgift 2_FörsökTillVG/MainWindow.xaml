@@ -13,18 +13,20 @@
         <DataTemplate x:Name="MessageViewTemplate" DataType="{x:Type models:MessageModel}">
             <views:MessageViewModel DataContext="{Binding }"/>
         </DataTemplate>
+        
         <DataTemplate x:Name="ContactViewTemplate" DataType="{x:Type models:ContactModel}">
             <views:ContactViewModel DataContext="{Binding}" />
         </DataTemplate>
+        
         <DataTemplate x:Name="CalenderViewTemplate" DataType="{x:Type models:CalenderModel}">
             <views:CalenderViewModel1 DataContext="{Binding}"/>
         </DataTemplate>
+        
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="40" />
             <ColumnDefinition Width="100"/>
-
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
@@ -37,30 +39,24 @@
                 </LinearGradientBrush>
             </Grid.Background>
         </Grid>
-        <Grid x:Name="mainMenu_Grid" Grid.Column="1" Grid.Row="1"  Background="#FF215DE8">
 
+        <Grid x:Name="mainMenu_Grid" Grid.Column="1" Grid.Row="1"  Background="#FF215DE8">
             <Grid.RowDefinitions>
                 <RowDefinition Height="212"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
+            
             <Grid Grid.Row="0">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
-
                     <TextBlock Text="Karl "/>
                     <TextBlock Text="Andersson" />
-
                 </StackPanel>
-                <Ellipse 
-    Width="60"
-    Height="60"
-    Stroke="Transparent"
-                    
- Fill="#FF93A2DF" Margin="18,39,18,4"
-    />
+                
+                <Ellipse  Width="60"  Height="60" Stroke="Transparent" Fill="#FF93A2DF" Margin="18,39,18,4"/>
             </Grid>
             <StackPanel Grid.Row="1">
                 <Button x:Name="btnMessage" Background="Transparent" Foreground="#FFF3ECEC" BorderThickness="0"  Height="40" Click="btnMessage_Click" >
@@ -72,7 +68,6 @@
 
                 <Button x:Name="btnContact" Background="Transparent" Foreground="#FFF3ECEC" BorderThickness="0"  Height="40"  Click="btnContact_Click" >
                     <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
-
                         <TextBlock  FontFamily="Segoe MDL2 Assets" Text="&#xE716;" FontSize="15" Margin="0,0,0,0"  />
                         <TextBlock Text= "Contact" Margin="7,0,4,0" />
                     </StackPanel>
@@ -80,7 +75,6 @@
 
                 <Button x:Name="btnCalender" Background="Transparent" Foreground="#FFF3ECEC" BorderThickness="0"   Height="40" Click="btnCalender_Click"   >
                     <StackPanel Orientation="Horizontal" Margin="0,0,6,0">
-
                         <TextBlock  FontFamily="Segoe MDL2 Assets" Text="&#xE787;" FontSize="15" Margin="0,0,0,0"  />
                         <TextBlock  Text= "Calender" Margin="6,0,3,0" />
                     </StackPanel>
@@ -88,7 +82,6 @@
 
                 <Button x:Name="btnTask" Background="Transparent" Foreground="#FFF3ECEC" BorderThickness="0"  Height="40"  >
                     <StackPanel Orientation="Horizontal" Margin="0,0,35,0">
-
                         <TextBlock  FontFamily="Segoe MDL2 Assets" Text="&#xE770;" FontSize="16"   />
                         <TextBlock  Text= "Task" Margin="8,0,0,0" />
                     </StackPanel>
@@ -96,13 +89,14 @@
 
                 <Button x:Name="btnSettings" Background="Transparent" Foreground="#FFF3ECEC" BorderThickness="0"  Height="40" >
                     <StackPanel Orientation="Horizontal" Margin="0,0,15,0">
-
                         <TextBlock  FontFamily="Segoe MDL2 Assets" Text="&#xE713;" FontSize="15"   />
                         <TextBlock  Text= "Settings" Margin="10,0,0,0" />
                     </StackPanel>
                 </Button>
+                
             </StackPanel>
         </Grid>
+        
         <ContentControl  Grid.Column="2"   Content="{Binding}" />
     </Grid>
 </Window>

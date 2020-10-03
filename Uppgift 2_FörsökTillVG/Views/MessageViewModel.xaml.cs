@@ -78,9 +78,5 @@ namespace Uppgift_2_FörsökTillVG.Views
             tbEnd.Text = "Many Thanks Peter Wilson Ikea IT-Department";
         }
 
-        private void MessageControl_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

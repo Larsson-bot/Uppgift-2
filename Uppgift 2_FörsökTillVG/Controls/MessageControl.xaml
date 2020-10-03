@@ -24,7 +24,5 @@
             
             </StackPanel>
         </Grid>
-
-
-    </Button>
+  </Button>
 </UserControl>

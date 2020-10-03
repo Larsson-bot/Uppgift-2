@@ -15,14 +15,12 @@
 
             <Image x:Name="igecontactImage" Grid.Column="0" HorizontalAlignment="Left" Height="80" Width="70"     >
                                <Image.Clip>
-                    <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,35"   
-                                          />
+                    <EllipseGeometry RadiusX="30" RadiusY="30" Center="30,35"    />
                 </Image.Clip>
             </Image>
             <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="5">
                 <TextBlock x:Name="tbfullName" Text="" FontSize="20" FontFamily="Garamond" FontWeight="Bold"/>
                 <TextBlock x:Name="tbcategory" Text="" FontSize="18" Foreground="SlateGray" FontStyle="Italic"/>
-               
             </StackPanel>
         </Grid>
             
