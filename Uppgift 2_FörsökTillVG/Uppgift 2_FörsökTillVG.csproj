@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Uppgift_2_FörsökTillVG</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Message 3.png" />
+    <None Remove="Views\Message 5.jpg" />
+    <None Remove="Views\Message 7.jpg" />
+    <None Remove="Views\Message 8.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Views\Message 3.png" />
+    <Resource Include="Views\Message 5.jpg" />
+    <Resource Include="Views\Message 7.jpg" />
+    <Resource Include="Views\Message 8.png" />
+  </ItemGroup>
+
+</Project>
