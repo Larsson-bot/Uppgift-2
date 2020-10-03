@@ -42,7 +42,7 @@ namespace Uppgift_2_FörsökTillVG.Views
             tbTime.Text = "09:14";
             tbDate.Text = "21 Augusti 2020";
             tbMessage.Text = "Greetings. I would like to invite you over to my birthdayparty. Please reply soon in order to get a good seat.";
-            tbEnd.Text = "Sincerely Queen of Great Britain";
+            tbEnd.Text = "Sincerely Queen Elizabeth";
         }
 
         private void ReadMessage2_Click(object sender, RoutedEventArgs e)
