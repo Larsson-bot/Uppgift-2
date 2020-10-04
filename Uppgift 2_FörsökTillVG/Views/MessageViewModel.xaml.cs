@@ -21,15 +21,6 @@ namespace Uppgift_2_FörsökTillVG.Views
         public MessageViewModel()
         {
             InitializeComponent();
-
-           // var messageinfo = new List<string>()
-            //{
-             // "Olle"
-            //};
-            //foreach(var message in messageinfo)
-            //{
-          //      messageList.Children.Add(new Controls.MessageControl() { To = message });
-            //}
         }
 
        
